@@ -31,7 +31,7 @@ cd ${TMPDIR}
 if [ -z "$SRCTAR" ]; then
     SRCTAR="src.txz"
     curl -L --retry 3 --ftp-pasv -o "$SRCTAR" "$SRC" || fail_exit
-    echo "$SHA256 '$SRCTAR'" | sha256sum --quiet --check - || fail_exit
+    echo "$SHA256 $SRCTAR" | sha256sum --quiet --check - || fail_exit
 fi
 xz -dc "$SRCTAR" | tar -xf -
 
