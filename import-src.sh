@@ -237,6 +237,7 @@ copy_cmd usr.bin/shar
 copy_cmd usr.bin/su
 copy_cmd usr.bin/tip
 copy_cmd usr.bin/which
+copy_cmd usr.sbin/uefisign
 copy_cmd contrib/ee
 copy_cmd contrib/netcat
 copy_cmd contrib/nvi

@@ -51,6 +51,10 @@ if ncurses.found()
     subdir('telnet')
 endif
 
+if libcrypto.found()
+    subdir('uefisign')
+endif
+
 if libcrypto.found() and libssl.found()
     subdir('libfetch')
     subdir('fetch')

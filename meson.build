@@ -111,7 +111,7 @@ libacl = dependency('libacl', required: true)
 # bc(1) needs libedit
 libedit = dependency('libedit', required: get_option('libedit'))
 
-# dc(1), install(1), sort(1), fetch(1) need libcrypto
+# dc(1), install(1), sort(1), fetch(1), uefisign(8) need libcrypto
 libcrypto = dependency('libcrypto', required: get_option('openssl'))
 
 # fetch(1) needs libssl
